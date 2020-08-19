@@ -13,6 +13,11 @@ int main()
 
 
     /* Write the logic to reverse the array. */
+    for (i = 0; i < num / 2; i++) {
+        int t = arr[i];
+        arr[i] = arr[num - i - 1];
+        arr[num - i - 1] = t;
+    }
 
     for(i = 0; i < num; i++)
         printf("%d ", *(arr + i));
