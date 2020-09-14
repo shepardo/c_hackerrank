@@ -22,7 +22,12 @@ int main()
     if (n_endptr == n_str || *n_endptr != '\0') { exit(EXIT_FAILURE); }
 
     // Write Your Code Here
-    // TODO:
+    char* numbers[] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    if (strlen(n_str) == 1) {
+        printf("%s", numbers[n_str[0] - '0']);
+    } else {
+        printf("Greater than 9\n");
+    }
 
     return 0;
 }
